@@ -1,0 +1,73 @@
+
+body{
+    font-family: merriweather, serif;
+    color: #2e2e2e;
+    letter-spacing: .01rem;
+    line-height: 1.75rem;
+    background-color: white;
+}
+
+
+header {
+
+    display: block;
+    background-color: #f5f8fa;
+
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    border-bottom-color: rgba(0,0,0,.125);
+
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+header h1{
+    font-family: merriweather, serif;
+    color: #2e2e2e;
+    letter-spacing: .01rem;
+    text-align: center;
+}
+
+header h3{
+    color: rgba(129,111,130,0.98);
+    text-align: center;
+}
+
+.mypic{
+    width: 20%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 10px;
+}
+
+.underline {
+    border-bottom: 2px solid;
+    width: 100%;
+    display: block;
+}
+
+section .title{
+    font-family: open sans, sans-serif;
+    font-weight: bold;
+}
+
+.first-section{
+    margin-top: 15px;
+}
+
+.left{
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.clearfix {
+    clear: both;
+}
+
+
+
+

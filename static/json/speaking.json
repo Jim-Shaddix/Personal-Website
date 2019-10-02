@@ -1,0 +1,14 @@
+[
+
+  {
+    "title": "Python For Data Analysis",
+    "slides": "https://slides.com/jimshaddix/python-for-data-analysis/#/",
+    "image": "images/speaking/Python-For-Data-Analysis.png",
+    "date": "6/10/19",
+    "description": ["This is a presentation I gave to a group graduate physics students",
+    "on how to use the Python programming language for data analysis. We discussed how",
+    "to use Jupyter Lab, how Python compares to other programming languages, and some",
+    "the libraries the are primarily used for data analysis."]
+  }
+
+]

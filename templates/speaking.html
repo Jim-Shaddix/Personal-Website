@@ -1,0 +1,62 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+    <header>
+
+        <h1><b> Speaking </b></h1>
+
+        <h3>
+            <small>
+                <b>
+                    Below are are examples of some talks that I have given.
+                </b>
+            </small>
+        </h3>
+
+    </header>
+
+
+    <section>
+        <div class="container">
+
+            <!-- Handling Talks-->
+            {% if project_list %}
+                {% for project in project_list %}
+                    <div class="card mb-3">
+                        <div class="row no-gutters">
+                            <div class="col-md-4">
+                                <img src="{{ url_for('static', filename=project.image) }}" class="card-img" alt="{{ project.title }}">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">
+                                        {{ project.title }}
+                                        <br>
+                                        <small>
+                                            <a href={{ project.slides }} target="_blanck">
+                                                {{ slides }}
+                                            </a>
+                                        </small>
+                                    </h5>
+                                    <p class="card-text"> {{ project.description }}</p>
+                                    <p class="card-text">
+                                        <small class="text-muted">
+                                            presented on: {{ project.date }}
+                                        </small>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                {% endfor %}
+            {% endif %}
+
+        </div> <!-- End Container-->
+
+    </section>
+
+
+{% endblock content %}
+
+

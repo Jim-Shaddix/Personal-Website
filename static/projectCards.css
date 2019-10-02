@@ -1,0 +1,56 @@
+.card-title small {
+    font-size: 12px;
+    letter-spacing: 0.001em;
+}
+
+
+.card-img{
+    padding: 5px;
+}
+
+.card-img-top{
+    padding: 5px;
+}
+
+
+
+
+/*
+ used for removing html when things get small.
+ - used by the hr element
+*/
+.content-desktop {
+    display: block;
+}
+
+.content-mobile {
+    display: none;
+}
+
+@media screen and (max-width: 575px) {
+
+    .content-desktop {visibility: hidden; display: none}
+    .content-mobile {display: block;}
+
+}
+
+/* Glyph, by Harry Roberts */
+
+hr.style-eight {
+    overflow: visible; /* For IE */
+    padding: 0;
+    border: none;
+    border-top: medium double #333;
+    color: #333;
+    text-align: center;
+}
+hr.style-eight:after {
+    content: "§";
+    display: inline-block;
+    position: relative;
+    top: -0.7em;
+    font-size: 1.5em;
+    padding: 0 0.25em;
+    background: white;
+}
+

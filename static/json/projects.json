@@ -1,0 +1,52 @@
+[
+
+  {
+    "title": "Method of Relaxation",
+    "github": "https://github.com/Jim-Shaddix/Method-Of-Relaxation",
+    "image": "images/project-images/relax.png",
+    "description": ["This is a web dashboard I developed that uses the Method of Relaxation for",
+                    "approximating solutions to laplace's partially differential quation.",
+                    "This dashboard can be used to visualize the potential between",
+                    "a system of capacitors."]
+  },
+
+  {
+    "title": "Neutron Scattering Dashboard",
+    "github": "https://github.com/Jim-Shaddix/Neutron-Scattering-Dashboard",
+    "image": "images/project-images/Neutron-Scattering.png",
+    "description": ["This is a web dashboard I developed that allows users to interactively ",
+                    "view results from a Neutron Scattering Experiment."]
+  },
+
+  {
+    "title": "Lorentzian Peak Analyzer",
+    "github": "https://github.com/Jim-Shaddix/Neutron-Scattering-Dashboard",
+    "image": "images/project-images/RUS.png",
+    "description": ["This is a program I developed for finding, tracking, and fitting",
+                    "Lorentzian peaks in data. This program allows the user to interactively",
+                    "preprocess data, and modify the parameters used for",
+                    "performing peak operations. I developed this application for doing data",
+                    "analysis and visualization on experiments that make use of Resonant",
+                    "Ultransonic Spectroscopy."]
+  },
+
+  {
+    "title": "Bulk Rename",
+    "github": "https://github.com/Jim-Shaddix/bulkrename",
+    "image": "images/project-images/bulkrename.png",
+    "description": ["Command line application that Allows for a user to bulk rename files using an editor, such as vim!",
+                    "Why waste time writing scripts to rename files when you can use",
+                    "this program in conjunction with bulk text editing tools?!"]
+  },
+
+  {
+    "title": "Random Forest From Scratch",
+    "github": "https://github.com/Jim-Shaddix/Random-Forest-In-Python",
+    "image": "images/project-images/random-forest.png",
+    "description": ["This application consists of a Jupyter Notebook I developed that gives",
+    "a detailed explanation on how Random Forests work. I developed the Random Forest algorithm",
+    "using the Python libraries Numpy and Pandas, and I also show how the algorithm can be used to investigate",
+    "the relationship between personality types and substance abuse."]
+  }
+
+]

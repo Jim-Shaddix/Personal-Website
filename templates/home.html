@@ -1,0 +1,98 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+    <header>
+
+        <img src="{{ url_for('static', filename='images/circle.png') }}" alt="MY IMAGE" class="mypic"/>
+
+        <h1><b> James Shaddix </b></h1>
+
+        <h3>
+            <small><b>Software Engineer <br> and <br> Data Analyst </b></small>
+        </h3>
+
+    </header>
+
+
+    <section class="first-section">
+
+        <div class="container">
+
+
+            <div class="row">
+
+                <div class="col-10">
+                    <h3 class="title">
+                        <b> About Me </b>
+                    </h3>
+
+                    <p> I graduated from Colorado State University
+                        with dual degrees in Computer Science and Applied Physics,
+                        and I have a passion for scientific programming! While
+                        I was a student, I served as the president of
+                        the
+                        <a target="_blank"
+                               href="https://www.physics.colostate.edu/undergraduate-students/student-groups/society-of-physics-students/">
+                            Society of Physics Students club
+                        </a>,
+                        worked an internship position as a software
+                        engineer at the
+                        <a target="_blank" href="https://energy.colostate.edu/"> Colorado State University Energy Institute </a>,
+                        and participated as an undergraduate researcher. I currently work as a member of a
+                        <a target="_blank" href="http://www.rosslabcsu.com/"> condensed matter physics team </a>
+                        at Colorado State University where I come up with software solutions, primarily using MATLAB and Python, for
+                        data analysis and visualization purposes.
+                    </p>
+                </div>
+
+                <div class="col-2">
+                    <h3 class="title">
+                        <b> Contact </b>
+                    </h3>
+
+                    <ul class="fa-ul">
+                        <li>
+                            <a href="https://github.com/Jim-Shaddix" target="_blank">
+                                <span class="fa-li">
+                                    <i class="fab fa-github"></i>
+                                </span>
+                                Github
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://www.linkedin.com/in/james-shaddix-215501183" target="_blank">
+                                <span class="fa-li">
+                                    <i class="fab fa-linkedin"></i>
+                                </span>
+                                Linkedin
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.facebook.com/jimmy.shaddix.7" target="_blank">
+                                <span class="fa-li">
+                                    <i class="fab fa-facebook"></i>
+                                </span>
+                                Facebook
+                            </a>
+                        </li>
+                        <li>
+                            <a href="contact">
+                                <span class="fa-li">
+                                    <i class="fas fa-envelope-square"></i>
+                                </span>
+                                Email
+                            </a>
+                        </li>
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </div> <!-- End Container-->
+
+    </section>
+
+
+{% endblock content %}
