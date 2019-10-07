@@ -8,7 +8,7 @@
     "description": ["This is a presentation I gave to a group graduate physics students",
     "on how to use the Python programming language for data analysis. We discussed how",
     "to use Jupyter Lab, how Python compares to other programming languages, and some",
-    "the libraries the are primarily used for data analysis."]
+    "the libraries that are often used for data analysis (numpy, matplotlib, pandas)."]
   },
 
   {
@@ -19,7 +19,7 @@
     "description": ["This is a presentation I gave to a group of undergraduate physics majors.",
     "During this talk, I explained how Decision Trees work, how they can be improved with boosting,",
     "and how they can be used to create a Random Forest. I than explained how Boosted",
-    "Decision Trees were used in the MiniBoone experiment to classify particles"]
+    "Decision Trees were used in the MiniBoone experiment to classify particles."]
   },
 
   {
@@ -31,7 +31,7 @@
     "For this talk I gave a basic introduction to Machine Learning.",
     "I discussed the different types of experiments that can be performed with Machine Learning,",
     "and gave a short explanation on how Neural Networks work. I than discussed how neural",
-    "netowkrs were used in MicroBoone experiment for particul classification."]
+    "networks were used in MicroBoone experiment to classify particles."]
   }
 
 ]
