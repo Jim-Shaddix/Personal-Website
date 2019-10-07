@@ -5,10 +5,9 @@ with Jinja2 templating. This is a fairely simple website that has a naviagation 
 to webpages for displaying my projects, some talks I have given, and a contact
 page.
 
-![landing-page](static/images/landing-page.png)
+* This website can be found at [jshaddix.com](http://jshaddix.com)
 
-### NOTE:
-This project is still in development
+![landing-page](static/images/landing-page.png)
 
 ## Dependencies
 * python3.7
@@ -29,6 +28,9 @@ pip install -r requirements.txt
 ```Bash
 python app.py
 ```
+* If you would like to use this application, you should configure the mail
+  settings that are found in the `Config.py` file. By default, the mail settings
+  contain arbitrary values (because I am not interested in giving out my email password).
 
 ## Citations
 * Some of the CSS styling I used was based on this [webpage](https://www.ybrikman.com/)
