@@ -1,8 +1,8 @@
-.myname{
-    font-size: 40px;
-    padding: 17px;
-    margin: 0;
-    font-weight: bold;
+
+/* Whole navbar */
+.navbar{
+    padding: 0px;
+    letter-spacing: 0.1rem !important;
 }
 
 .navbar-bottom{
@@ -12,22 +12,40 @@
     border-bottom-width: 2px;
 }
 
-.nav-dec{
-    font-weight: bold;
-    color: black;
 
-    /*margin-top: 17px;*/
+/* My Name */
+.myname{
+    padding: 17px;
+    margin: 0;
+    font-weight: bold;
     color: black;
 
     font-family: Montserrat,helvetica neue,Helvetica,Arial,sans-serif;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: .15em;
-    font-size: 15px;
+    font-size: 16px;
 
 }
 
-/* mouse over link */
-.navButton a:hover {
-    color: #007bff;
+.myname:hover{
+    color: #0B0080 !important;
+    text-decoration: underline !important;
+}
+
+.nav-link{
+    padding: 20px;
+}
+
+.nav-link:hover{
+    background-color: #dff3ff;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+}
+
+.nav-text{
+    color: #007bff !important;
+    font-weight: 400 !important;
+    font-size: 16px !important;
+    margin-left: 15px;
 }
