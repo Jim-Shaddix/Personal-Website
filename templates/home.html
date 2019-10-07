@@ -2,97 +2,230 @@
 
 {% block content %}
 
-    <header>
+  <header>
 
-        <img src="{{ url_for('static', filename='images/circle.png') }}" alt="MY IMAGE" class="mypic"/>
+    <img src="{{ url_for('static', filename='images/circle.png') }}" alt="MY IMAGE" class="mypic"/>
 
-        <h1><b> James Shaddix </b></h1>
+    <h1><b> James Shaddix </b></h1>
 
-        <h3>
-            <small><b>Software Engineer <br> and <br> Data Analyst </b></small>
-        </h3>
+    <h3>
+      <small><b>Software Engineer <br> and <br> Data Analyst </b></small>
+    </h3>
 
-    </header>
-
-
-    <section class="first-section">
-
-        <div class="container">
+  </header>
 
 
-            <div class="row">
+  <section class="first-section">
 
-                <div class="col-8 offset-md-1">
-                    <h3 class="title">
-                        <b> About Me </b>
-                    </h3>
+    <div class="container">
 
-                    <p> I graduated from Colorado State University
-                        with dual B.S. degrees in Computer Science and Applied Physics,
-                        and I have a passion for scientific programming! While
-                        I was a student, I served as the president of
-                        the
-                        <a target="_blank"
-                               href="https://www.physics.colostate.edu/undergraduate-students/student-groups/society-of-physics-students/">
-                            Society of Physics Students club
-                        </a>,
-                        worked an internship position as a software
-                        engineer at the
-                        <a target="_blank" href="https://energy.colostate.edu/"> Colorado State University Energy Institute </a>,
-                        and participated as an undergraduate researcher. I currently work as a member of a
-                        <a target="_blank" href="http://www.rosslabcsu.com/"> condensed matter physics team </a>
-                        at Colorado State University where I come up with software solutions, primarily using MATLAB and Python, for
-                        data analysis and visualization purposes.
-                    </p>
-                </div>
 
-                <div class="col-2">
-                    <h3 class="title">
-                        <b> Contact </b>
-                    </h3>
+      <div class="row">
 
-                    <ul class="fa-ul">
-                        <li>
-                            <a href="https://github.com/Jim-Shaddix" target="_blank">
+        <div class="col-8 offset-md-1">
+          <h3 class="title">
+            <b> About Me </b>
+          </h3>
+
+          <p> I graduated from Colorado State University
+            with dual B.S. degrees in Computer Science and Applied Physics,
+            and I have a passion for scientific programming! While
+            I was a student, I served as the president of
+            the
+            <a target="_blank"
+               href="https://www.physics.colostate.edu/undergraduate-students/student-groups/society-of-physics-students/">
+              Society of Physics Students club
+            </a>,
+            worked an internship position as a software
+            engineer at the
+            <a target="_blank" href="https://energy.colostate.edu/"> Colorado State University Energy Institute </a>,
+            and participated as an undergraduate researcher. I currently work as a member of a
+            <a target="_blank" href="http://www.rosslabcsu.com/"> condensed matter physics team </a>
+            at Colorado State University where I come up with software solutions, primarily using MATLAB and Python, for
+            data analysis and visualization purposes.
+          </p>
+        </div>
+
+        <div class="col-2">
+          <h3 class="title">
+            <b> Contact </b>
+          </h3>
+
+          <ul class="fa-ul">
+            <li>
+              <a href="https://github.com/Jim-Shaddix" target="_blank">
                                 <span class="fa-li">
                                     <i class="fab fa-github"></i>
                                 </span>
-                                Github
-                            </a>
-                        </li>
-                        <li>
-                            <a href="http://www.linkedin.com/in/james-shaddix-215501183" target="_blank">
+                Github
+              </a>
+            </li>
+            <li>
+              <a href="http://www.linkedin.com/in/james-shaddix-215501183" target="_blank">
                                 <span class="fa-li">
                                     <i class="fab fa-linkedin"></i>
                                 </span>
-                                Linkedin
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://www.facebook.com/jimmy.shaddix.7" target="_blank">
+                Linkedin
+              </a>
+            </li>
+            <li>
+              <a href="https://www.facebook.com/jimmy.shaddix.7" target="_blank">
                                 <span class="fa-li">
                                     <i class="fab fa-facebook"></i>
                                 </span>
-                                Facebook
-                            </a>
-                        </li>
-                        <li>
-                            <a href="contact">
+                Facebook
+              </a>
+            </li>
+            <li>
+              <a href="contact">
                                 <span class="fa-li">
                                     <i class="fas fa-envelope-square"></i>
                                 </span>
-                                Email
-                            </a>
-                        </li>
-                    </ul>
+                Email
+              </a>
+            </li>
+          </ul>
 
-                </div>
+        </div>
 
+      </div>
+
+      <div class="row">
+        <div class="col offset-md-1">
+          <h3 class="title">
+            <b> Credentials </b>
+          </h3>
+
+            <!-- Physics B.S. -->
+            <div class="media">
+              <!-- <img src="..." class="mr-3" alt="..."> -->
+              <div class="media-body">
+                <h5 class="mt-0"> <u>B.S. Applied Physics (Colorado State University)</u></h5>
+                <ul>
+                  <li>
+                    <b> Physics Course List: </b> Quantum Mechanics, Electromagnetics, Thermodynamics, Mechanics, Modern Physics, Circuits.
+                  </li>
+                  <li>
+                    <b> Mathematics Course List: </b> Vector Calculous, Differential Equations, Linear Algebra for Data Scientists, Analytical Techniques for Physicists.
+                  </li>
+                </ul>
+              </div>
             </div>
 
-        </div> <!-- End Container-->
+          <!-- Computer Science B.S. -->
+          <div class="media">
+            <!-- <img src="..." class="mr-3" alt="..."> -->
+            <div class="media-body">
+              <h5 class="mt-0"> <u>B.S. Computer Science (Colorado State University)</u></h5>
+              <ul>
+                <li>
+                  <b> Computer Science Course List: </b> Machine Learning, Artificial Intelligence, Software Development, Parallel Programming, Algorithms, Databases.
+                </li>
+              </ul>
+            </div>
+          </div>
 
-    </section>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col offset-md-1">
+          <h3 class="title">
+            <b> Work History </b>
+          </h3>
+          <h5> <u>Physics Research Assistant (Data Analyst / Software Engineer)</u></h5>
+          <em>Colorado State University Dept. Physics (June 2018 – Present)</em>
+          <ul>
+            <li>
+              Developed a GUI that interactively used signal processing techniques for finding, fitting, and
+              tracking peak fits on experimental data.
+            </li>
+            <li>
+               Developed a web application with an interactive graph component for exploring intensity data
+               from a neutron scattering experiment.
+            </li>
+            <li>
+              Gave a presentation on how to effectively use Python for data analysis.
+            </li>
+          </ul>
+
+          <h5> <u>Software Engineer (Intern)</u></h5>
+          <em>Colorado State University Energy Institute (May 2016 – August 2016)</em>
+          <ul>
+            <li>
+              Developed a GUI that interactively used signal processing techniques for finding, fitting, and
+              tracking peak fits on experimental data.
+            </li>
+            <li>
+              Developed a web application with an interactive graph component for exploring intensity data
+              from a neutron scattering experiment.
+            </li>
+            <li>
+              Gave a presentation on how to effectively use Python for data analysis.
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- I need to fix the spacing here (but it looks perfect)-->
+
+      <div class="row">
+        <div class="col offset-md-1">
+          <h3 class="title">
+            <b> Skills </b>
+          </h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col offset-md-1">
+          <h5> <u>Programming Languages</u></h5>
+          <ul>
+            <li> Python </li>
+            <li> SQL (MySQL)</li>
+            <li> C (openMP, MPI, CUDA)</li>
+            <li> C++ </li>
+            <li> C# </li>
+            <li> Java </li>
+            <li> MATLAB (APP Designer)</li>
+            <li> HTML/CSS (Bootstrap)</li>
+            <li> BASH (command line)</li>
+            <li> LaTeX</li>
+          </ul>
+        </div>
+
+        <div class="col">
+          <h5> <u>Python Libraries</u></h5>
+          <ul>
+            <li> numpy </li>
+            <li> pandas </li>
+            <li> scipy </li>
+            <li> matplotlib </li>
+            <li> plotly </li>
+            <li> dash </li>
+            <li> scikitlearn </li>
+            <li> flask </li>
+            <li> click </li>
+          </ul>
+        </div>
+
+        <div class="col">
+          <h5> <u>Software</u></h5>
+          <ul>
+            <li> GIT </li>
+            <li> Excel </li>
+            <li> JupyterLab </li>
+            <li> VirtualBox </li>
+            <li> Vim </li>
+            <li> Tmux </li>
+            <li> Eclipse </li>
+            <li> VScode </li>
+          </ul>
+        </div>
+      </div>
+
+
+    </div> <!-- End Container-->
+
+  </section>
 
 
 {% endblock content %}
