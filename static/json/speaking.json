@@ -2,13 +2,36 @@
 
   {
     "title": "Python For Data Analysis",
-    "slides": "https://slides.com/jimshaddix/python-for-data-analysis/#/",
+    "slides.com": "https://slides.com/jimshaddix/python-for-data-analysis/#/",
     "image": "images/speaking/Python-For-Data-Analysis.png",
     "date": "6/10/19",
     "description": ["This is a presentation I gave to a group graduate physics students",
     "on how to use the Python programming language for data analysis. We discussed how",
     "to use Jupyter Lab, how Python compares to other programming languages, and some",
     "the libraries the are primarily used for data analysis."]
+  },
+
+  {
+    "title": "Boosted Decision Trees In Particle Physics",
+    "slides.pptx": "presentations/Boosted-Decision-Trees.pptx",
+    "image": "images/speaking/Boosted-Decision-Trees.png",
+    "date": "5/10/18",
+    "description": ["This is a presentation I gave to a group of undergraduate physics majors.",
+    "During this talk, I explained how Decision Trees work, how they can be improved with boosting,",
+    "and how they can be used to create a Random Forest. I than explained how Boosted",
+    "Decision Trees were used in the MiniBoone experiment to classify particles"]
+  },
+
+  {
+    "title": "Machine Learning In Physics",
+    "slides.pptx": "presentations/Machine-Learning.pptx",
+    "image": "images/speaking/Machine-Learning.png",
+    "date": "3/21/18",
+    "description": ["This is a presentation I gave to a group of undergraduate physics majors.",
+    "For this talk I gave a basic introduction to Machine Learning.",
+    "I discussed the different types of experiments that can be performed with Machine Learning,",
+    "and gave a short explanation on how Neural Networks work. I than discussed how neural",
+    "netowkrs were used in MicroBoone experiment for particul classification."]
   }
 
 ]

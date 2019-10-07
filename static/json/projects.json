@@ -20,7 +20,7 @@
 
   {
     "title": "Lorentzian Peak Analyzer",
-    "github": "https://github.com/Jim-Shaddix/Neutron-Scattering-Dashboard",
+    "github": "https://github.com/Jim-Shaddix/rus-probe",
     "image": "images/project-images/RUS.png",
     "description": ["This is a program I developed for finding, tracking, and fitting",
                     "Lorentzian peaks in data. This program allows the user to interactively",
