@@ -47,6 +47,17 @@
     "a detailed explanation on how Random Forests work. I developed the Random Forest algorithm",
     "using the Python libraries Numpy and Pandas, and I also show how the algorithm can be used to investigate",
     "the relationship between personality types and substance abuse."]
+  },
+
+  {
+    "title": "Personal Website",
+    "github": "https://github.com/Jim-Shaddix/Personal-Website",
+    "image": "images/project-images/personal-website.png",
+    "description": ["This is the website that you are currently looking at!",
+    "I developed this website using Bootstrap for the frontend, and Python's ",
+    "Flask framework with Jinja2 templating for the backend. The program runs ",
+    "on the AWS LightSail service using the nginx webserver and the gunicorn ",
+    "application server."]
   }
 
 ]
