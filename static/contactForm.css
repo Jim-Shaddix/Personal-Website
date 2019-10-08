@@ -8,4 +8,11 @@ label{
     margin-bottom: 20px;
 }
 
+textarea{
+    height: 30%;
+    background-color: red;
+}
 
+#message{
+    height: 175px;
+}

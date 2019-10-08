@@ -36,12 +36,18 @@
 .nav-link{
     padding: 20px;
 }
-
 .nav-link:hover{
     background-color: #dff3ff;
-    border-left: 1px solid black;
-    border-right: 1px solid black;
 }
+
+@media only screen and (min-width: 575px) {
+  .nav-link:hover {
+      border-left: 1px solid black;
+      border-right: 1px solid black;
+  }
+}
+
+
 
 .nav-text{
     color: #007bff !important;

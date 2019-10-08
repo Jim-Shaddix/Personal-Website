@@ -8,7 +8,7 @@
     "description": ["This is a presentation I gave to a group graduate physics students",
     "on how to use the Python programming language for data analysis. We discussed how",
     "to use Jupyter Lab, how Python compares to other programming languages, and some",
-    "the libraries that are often used for data analysis (numpy, matplotlib, pandas)."]
+    "of the libraries that are often used for data analysis (numpy, matplotlib, pandas)."]
   },
 
   {
@@ -28,10 +28,10 @@
     "image": "images/speaking/Machine-Learning.png",
     "date": "3/21/18",
     "description": ["This is a presentation I gave to a group of undergraduate physics majors.",
-    "For this talk I gave a basic introduction to Machine Learning.",
+    "For this talk, I gave a basic introduction to Machine Learning.",
     "I discussed the different types of experiments that can be performed with Machine Learning,",
     "and gave a short explanation on how Neural Networks work. I than discussed how neural",
-    "networks were used in MicroBoone experiment to classify particles."]
+    "networks were used in the MicroBoone experiment to classify particles."]
   }
 
 ]

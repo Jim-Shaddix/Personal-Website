@@ -12,6 +12,7 @@ from wtforms import StringField, TextAreaField, SubmitField, validators, Validat
 
 _prompt = "Please enter your "
 
+
 class ContactForm(FlaskForm):
 
     name = StringField("Name",

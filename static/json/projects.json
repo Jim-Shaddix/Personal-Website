@@ -5,7 +5,7 @@
     "github": "https://github.com/Jim-Shaddix/Method-Of-Relaxation",
     "image": "images/project-images/relax.png",
     "description": ["This is a web dashboard I developed that uses the Method of Relaxation for",
-                    "approximating solutions to laplace's partially differential quation.",
+                    "approximating solutions to laplace's partially differential equation.",
                     "This dashboard can be used to visualize the potential between",
                     "a system of capacitors."]
   },
@@ -15,7 +15,8 @@
     "github": "https://github.com/Jim-Shaddix/Neutron-Scattering-Dashboard",
     "image": "images/project-images/Neutron-Scattering.png",
     "description": ["This is a web dashboard I developed that allows users to interactively ",
-                    "view results from a Neutron Scattering Experiment."]
+                    "view results from a Neutron Scattering Experiment. Functionally, the application",
+                    "allows for users to interactively look at cross sections of a heatmap."]
   },
 
   {
@@ -34,7 +35,7 @@
     "title": "Bulk Rename",
     "github": "https://github.com/Jim-Shaddix/bulkrename",
     "image": "images/project-images/bulkrename.png",
-    "description": ["Command line application that Allows for a user to bulk rename files using an editor, such as vim!",
+    "description": ["This is a command line application that Allows for a user to bulk rename files using an editor, such as vim!",
                     "Why waste time writing scripts to rename files when you can use",
                     "this program in conjunction with bulk text editing tools?!"]
   },
@@ -45,7 +46,7 @@
     "image": "images/project-images/random-forest.png",
     "description": ["This application consists of a Jupyter Notebook I developed that gives",
     "a detailed explanation on how Random Forests work. I developed the Random Forest algorithm",
-    "using the Python libraries Numpy and Pandas, and I also show how the algorithm can be used to investigate",
+    "using the Python libraries Numpy and Pandas. In this notebook, I show how the algorithm can be used to investigate",
     "the relationship between personality types and substance abuse."]
   },
 
