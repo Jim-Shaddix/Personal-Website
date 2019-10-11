@@ -74,18 +74,18 @@ def projects():
                            project_singles=project_singles)
 
 
-@app.route("/speaking")
-def speaking():
+@app.route("/talks")
+def talks():
 
     # json file to parse
-    json_file = "static/json/speaking.json"
+    json_file = "static/json/talks.json"
 
     # parsed json results
     project_list = read_json(json_file)
 
-    return render_template("speaking.html",
+    return render_template("talks.html",
                            project_list=project_list,
-                           title="speaking")
+                           title="talks")
 
 
 @app.route("/contact", methods=['GET', 'POST'])

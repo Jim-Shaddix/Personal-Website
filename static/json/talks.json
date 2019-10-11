@@ -13,7 +13,7 @@
 
   {
     "title": "Boosted Decision Trees In Particle Physics",
-    "slides_powerpoint": "presentations/Boosted-Decision-Trees.pptx",
+    "slides_powerpoint": "static/presentations/Boosted-Decision-Trees.pptx",
     "file_name":"Boosted-Decision-Trees.pptx",
     "image": "images/speaking/Boosted-Decision-Trees.png",
     "date": "5/10/18",
@@ -25,7 +25,7 @@
 
   {
     "title": "Machine Learning In Physics",
-    "slides_powerpoint": "presentations/Machine-Learning.pptx",
+    "slides_powerpoint": "static/presentations/Machine-Learning.pptx",
     "file_name":"Machine-Learning.pptx",
     "image": "images/speaking/Machine-Learning.png",
     "date": "3/21/18",
