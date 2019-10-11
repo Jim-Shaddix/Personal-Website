@@ -2,7 +2,7 @@
 
   {
     "title": "Python For Data Analysis",
-    "slides.com": "https://slides.com/jimshaddix/python-for-data-analysis/#/",
+    "slides_online": "https://slides.com/jimshaddix/python-for-data-analysis/#/",
     "image": "images/speaking/Python-For-Data-Analysis.png",
     "date": "6/10/19",
     "description": ["This is a presentation I gave to a group graduate physics students",
@@ -13,7 +13,8 @@
 
   {
     "title": "Boosted Decision Trees In Particle Physics",
-    "slides.pptx": "presentations/Boosted-Decision-Trees.pptx",
+    "slides_powerpoint": "presentations/Boosted-Decision-Trees.pptx",
+    "file_name":"Boosted-Decision-Trees.pptx",
     "image": "images/speaking/Boosted-Decision-Trees.png",
     "date": "5/10/18",
     "description": ["This is a presentation I gave to a group of undergraduate physics majors.",
@@ -24,7 +25,8 @@
 
   {
     "title": "Machine Learning In Physics",
-    "slides.pptx": "presentations/Machine-Learning.pptx",
+    "slides_powerpoint": "presentations/Machine-Learning.pptx",
+    "file_name":"Machine-Learning.pptx",
     "image": "images/speaking/Machine-Learning.png",
     "date": "3/21/18",
     "description": ["This is a presentation I gave to a group of undergraduate physics majors.",

@@ -33,11 +33,22 @@
                   <h5 class="card-title">
                     {{ project.title }}
                     <br>
+                    {% if project.slides_online %}
                     <small>
-                      <a href={{ project.slides }} target="_blanck">
-                        {{ slides }}
+                      <a href={{ project.slides_online }} target="_blanck">
+                        view slides online
                       </a>
                     </small>
+                    {% endif %}
+                    <!--
+                    {% if project.slides_powerpoint %}
+                      <small>
+                        <a href={{ project.slides_powerpoint }} download={{ project.file_name }} target="_blank">
+                          download powerpoint
+                        </a>
+                      </small>
+                    {% endif %}
+                    -->
                   </h5>
                   <p class="card-text"> {{ project.description }}</p>
                   <p class="card-text">
