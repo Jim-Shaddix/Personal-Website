@@ -13,4 +13,3 @@ class Basic_Config():
 
     # password for email
     MAIL_PASSWORD = '1234'
-

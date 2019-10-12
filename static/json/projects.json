@@ -7,7 +7,8 @@
     "description": ["This is a web dashboard I developed that uses the Method of Relaxation for",
                     "approximating solutions to laplace's partially differential equation.",
                     "This dashboard can be used to visualize the potential between",
-                    "a system of capacitors."]
+                    "a system of capacitors."],
+    "live": "https://method-of-relaxation.herokuapp.com"
   },
 
   {
