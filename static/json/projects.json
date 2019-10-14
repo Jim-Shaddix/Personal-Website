@@ -60,6 +60,16 @@
     "Flask framework with Jinja2 templating for the backend. The program runs ",
     "on the AWS LightSail service using the nginx webserver and the gunicorn ",
     "application server."]
+  },
+  {
+    "title": "Parallelized Decision Tree",
+    "github": "https://github.com/Jim-Shaddix/Parallelized-Decision-Tree",
+    "image": "images/project-images/parallelized-decision-tree.png",
+    "description": ["This is a final project that I developed for a calss on",
+    "parallel programming. For this project, I developed three different",
+    "implementations of the decision tree algorithm in C++, and a analyzed the performance",
+    "of each of the algorithms using Python. I than wrote a report comparing the",
+    "runtime performance of each of my implementations under different thread counts."]
   }
 
 ]

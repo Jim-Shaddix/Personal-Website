@@ -90,10 +90,27 @@
                                     </small>
                                 </h5>
                                 <p class="card-text"> {{ project.description }}</p>
-                                <p class="card-text">
-                                    <small class="text-muted">Last updated 3 mins ago</small>
-                                </p>
-                            </div>
+
+                                <div class="row">
+                                  <div class="col">
+                                    <a href={{ project.github }} target="_blanck">
+                                      <div class="btn btn-outline-info"> Github</div>
+                                    </a>
+                                  </div>
+                                  {% if project.live %}
+                                    <div class="col text-right">
+                                      <a href={{ project.live }} target="_blanck">
+                                        <div class="btn btn-outline-success"> View Live </div>
+                                      </a>
+                                    </div>
+                                  {% endif %}
+                                </div>
+                                    <!--
+                                    <p class="card-text">
+                                        <small class="text-muted">Last updated 3 mins ago</small>
+                                    </p>
+                                    -->
+                                </div>
                         </div>
                     </div>
                 </div>
