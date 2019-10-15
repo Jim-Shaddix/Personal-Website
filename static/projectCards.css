@@ -54,3 +54,9 @@ hr.style-eight:after {
     background: white;
 }
 
+.heroku-note b{
+    color: #3B666B;
+}
+.heroku-note p{
+    color: #5B5B5B;
+}

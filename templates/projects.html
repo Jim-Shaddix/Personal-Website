@@ -2,123 +2,69 @@
 
 {% block content %}
 
-<header>
+  <header>
 
     <h1><b> Projects </b></h1>
 
     <h3>
-        <small>
-            <b> All of these projects can be viewed on my
-                <a href="https://github.com/Jim-Shaddix" target="_blank">
-                    Github!
-                </a>
-            </b>
-        </small>
+      <small>
+        <b> All of these projects can be viewed on my
+          <a href="https://github.com/Jim-Shaddix" target="_blank">
+            Github!
+          </a>
+        </b>
+      </small>
     </h3>
 
-</header>
+  </header>
 
-<section>
+  <section>
     <div class="container">
 
-        <!-- Handling Group Projects-->
-        {% if project_groups %}
-            <hr class="content-desktop">
-            <hr class="style-eight content-desktop">
-            <hr class="content-desktop">
-        {% endif %}
+      <!-- Divider-->
+      {% if project_groups %}
+        <hr class="content-desktop">
+        <hr class="style-eight content-desktop">
+        <hr class="content-desktop">
+      {% endif %}
 
-        {% for group in project_groups %}
-            <div class="card-deck">
-                {% for project in group %}
-                    <div class="card">
-                        <img src="{{ url_for('static', filename=project.image) }}" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">
-                                {{ project.title }}
-                                <br>
-                                <small>
-                                    <a href={{ project.github }} target="_blanck">
-                                        {{ project.github }}
-                                    </a>
-                                </small>
-                            </h5>
-                            <p class="card-text"> {{ project.description }}</p>
-                            <p class="card-text">
-                                <!-- <small class="text-muted">Last updated 3 mins ago</small> -->
-                            </p>
-                            <div class="row">
-                              <div class="col">
-                                <a href={{ project.github }} target="_blanck">
-                                  <div class="btn btn-outline-info"> Github</div>
-                                </a>
-                              </div>
-                              {% if project.live %}
-                                <div class="col text-right">
-                                  <a href={{ project.live }} target="_blanck">
-                                    <div class="btn btn-outline-success"> View Live </div>
-                                  </a>
-                                </div>
-                              {% endif %}
-                            </div>
-                        </div>
-                    </div>
-                {% endfor %}
+      <!-- Handling Group Projects-->
+      {% for group in project_groups %}
+        <div class="card-deck">
+          {% for project in group %}
+            <div class="card">
+              <img src="{{ url_for('static', filename=project.image) }}" class="card-img-top" alt="...">
+              <div class="card-body">
+                {% include "project_card_body.html" %}
+              </div>
             </div>
-            <hr class="content-desktop">
-            <hr class="style-eight content-desktop">
-            <hr class="content-desktop">
-        {% endfor %}
+          {% endfor %}
+        </div>
+        <hr class="content-desktop">
+        <hr class="style-eight content-desktop">
+        <hr class="content-desktop">
+      {% endfor %}
 
-        <!-- Handling Single Projects-->
-        {% if project_singles %}
-            {% for project in project_singles %}
-                <div class="card mb-3">
-                    <div class="row no-gutters">
-                        <div class="col-md-4">
-                            <img src="{{ url_for('static', filename=project.image) }}" class="card-img" alt="...">
-                        </div>
-                        <div class="col-md-8">
-                            <div class="card-body">
-                                <h5 class="card-title">
-                                    {{ project.title }}
-                                    <br>
-                                    <small>
-                                        <a href={{ project.github }} target="_blanck">
-                                            {{ project.github }}
-                                        </a>
-                                    </small>
-                                </h5>
-                                <p class="card-text"> {{ project.description }}</p>
-
-                                <div class="row">
-                                  <div class="col">
-                                    <a href={{ project.github }} target="_blanck">
-                                      <div class="btn btn-outline-info"> Github</div>
-                                    </a>
-                                  </div>
-                                  {% if project.live %}
-                                    <div class="col text-right">
-                                      <a href={{ project.live }} target="_blanck">
-                                        <div class="btn btn-outline-success"> View Live </div>
-                                      </a>
-                                    </div>
-                                  {% endif %}
-                                </div>
-                                    <!--
-                                    <p class="card-text">
-                                        <small class="text-muted">Last updated 3 mins ago</small>
-                                    </p>
-                                    -->
-                                </div>
-                        </div>
-                    </div>
+      <!-- Handling Single Projects-->
+      {% if project_singles %}
+        {% for project in project_singles %}
+          <div class="card mb-3">
+            <div class="row no-gutters">
+              <div class="col-md-4">
+                <img src="{{ url_for('static', filename=project.image) }}" class="card-img" alt="...">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  {% include "project_card_body.html" %}
                 </div>
-            {% endfor %}
-        {% endif %}
+              </div>
+            </div>
+          </div>
+        {% endfor %}
+      {% endif %}
 
     </div> <!-- End Container-->
 
-</section>
+  </section>
 
 {% endblock content %}

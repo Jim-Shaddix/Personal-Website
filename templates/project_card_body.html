@@ -1,0 +1,35 @@
+<h5 class="card-title">
+  {{ project.title }}
+  <br>
+  <small>
+    <a href={{ project.github }} target="_blanck">
+      {{ project.github }}
+    </a>
+  </small>
+</h5>
+<p class="card-text"> {{ project.description }}</p>
+<p class="card-text">
+  <!-- <small class="text-muted">Last updated 3 mins ago</small> -->
+</p>
+{% if project.heroku %}
+  <p class="heroku-note">
+    <small>
+      <b> NOTE: </b> This project is hosted on Heroku's Free Tier. This tier uses serverless hosting
+      which results in the app taking 10-20 seconds to load.
+    </small>
+  </p>
+{% endif %}
+<div class="row">
+  <div class="col">
+    <a href={{ project.github }} target="_blanck">
+      <div class="btn btn-outline-info"> Github</div>
+    </a>
+  </div>
+  {% if project.live %}
+    <div class="col text-right">
+      <a href={{ project.live }} target="_blanck">
+        <div class="btn btn-outline-success"> View Live </div>
+      </a>
+    </div>
+  {% endif %}
+</div>

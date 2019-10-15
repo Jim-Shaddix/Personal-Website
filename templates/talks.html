@@ -32,28 +32,50 @@
                 <div class="card-body">
                   <h5 class="card-title">
                     {{ project.title }}
-                    <br>
-                    {% if project.slides_online %}
+                  </h5>
+                  <p class="card-text"> {{ project.description }}</p>
+                  <div class="row">
+                    <div class="col">
+                      <p class="card-text">
+                        <small class="text-muted">
+                          presented on: {{ project.date }}
+                        </small>
+                      </p>
+                    </div>
+                    <div class="col text-right">
+                      {% if project.slides_online %}
+                      <a href={{ project.slides_online }} target="_blanck">
+                        <div class="btn btn-outline-success">
+                          view slides online
+                        </div>
+                      </a>
+                      {% endif %}
+                      {% if project.slides_powerpoint %}
+                        <a href={{ project.slides_powerpoint }} download>
+                          <div class="btn btn-outline-info">
+                            Download Powerpoint
+                          </div>
+                        </a>
+                      {% endif %}
+                    </div>
+                  </div>
+
+                <!--
+                  {% if project.slides_online %}
                     <small>
                       <a href={{ project.slides_online }} target="_blanck">
                         view slides online
                       </a>
                     </small>
-                    {% endif %}
-                    {% if project.slides_powerpoint %}
-                      <small>
-                        <a href={{ project.slides_powerpoint }} download>
-                          download powerpoint
-                        </a>
-                      </small>
-                    {% endif %}
-                  </h5>
-                  <p class="card-text"> {{ project.description }}</p>
-                  <p class="card-text">
-                    <small class="text-muted">
-                      presented on: {{ project.date }}
+                  {% endif %}
+                  {% if project.slides_powerpoint %}
+                    <small>
+                      <a href={{ project.slides_powerpoint }} download>
+                        download powerpoint
+                      </a>
                     </small>
-                  </p>
+                  {% endif %}
+                  !-->
                 </div>
               </div>
             </div>

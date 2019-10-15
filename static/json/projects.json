@@ -8,7 +8,8 @@
                     "approximating solutions to laplace's partially differential equation.",
                     "This dashboard can be used to visualize the potential between",
                     "a system of capacitors."],
-    "live": "https://method-of-relaxation.herokuapp.com"
+    "live": "https://method-of-relaxation.herokuapp.com",
+    "heroku": true
   },
 
   {
@@ -17,7 +18,9 @@
     "image": "images/project-images/Neutron-Scattering.png",
     "description": ["This is a web dashboard I developed that allows users to interactively ",
                     "view results from a Neutron Scattering Experiment. Functionally, the application",
-                    "allows for users to interactively look at cross sections of a heatmap."]
+                    "allows for users to specifiy a sweeping direction, and",
+                    "interactively displays cross sections of a heatmap. The",
+                    "heatmap displays Neutron intensity data."]
   },
 
   {
@@ -36,9 +39,10 @@
     "title": "Bulk Rename",
     "github": "https://github.com/Jim-Shaddix/bulkrename",
     "image": "images/project-images/bulkrename.png",
-    "description": ["This is a command line application that Allows for a user to bulk rename files using an editor, such as vim!",
+    "description": ["This is a command line application that allows for a user to bulk rename files using an editor such as vim!",
                     "Why waste time writing scripts to rename files when you can use",
-                    "this program in conjunction with bulk text editing tools?!"]
+                    "this program in conjunction with bulk text editing tools",
+                    "in your favorite editor?!"]
   },
 
   {
@@ -65,11 +69,12 @@
     "title": "Parallelized Decision Tree",
     "github": "https://github.com/Jim-Shaddix/Parallelized-Decision-Tree",
     "image": "images/project-images/parallelized-decision-tree.png",
-    "description": ["This is a final project that I developed for a calss on",
+    "description": ["This is a final project that I developed for a class on",
     "parallel programming. For this project, I developed three different",
-    "implementations of the decision tree algorithm in C++, and a analyzed the performance",
+    "implementations of the decision tree algorithm in C++, and analyzed the performance",
     "of each of the algorithms using Python. I than wrote a report comparing the",
-    "runtime performance of each of my implementations under different thread counts."]
+    "runtime performance of each of my implementations under different thread counts",
+    "that explains the observed behavior."]
   }
 
 ]

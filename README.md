@@ -11,7 +11,7 @@ web server, with the gunicorn application server.
 ![landing-page](static/images/landing-page.png)
 
 ## Dependencies
-* python3.7
+* python3.7.4
 * Third party python libraries listed in **requirements.txt**
 
 ## Installation Instructions
@@ -42,4 +42,4 @@ python app.py
 This guide is slightly outdated for modern versions of the FlaskWTF library but it is not to hard to fill in the blanks.
 
 * I was able to configure my own SSL encrypted nginx webserver using the gunicorn application server
-on AWS Lightsail by following [Corey Schafer's flask deployment tutorial](https://www.youtube.com/watch?v=goToXTC96Co&list=PL-osiE80TeTs4UjLw5MM6OjgkjFeUxCYH&index=13)
+on AWS Lightsail by following [Corey Schafer's flask deployment tutorial](https://www.youtube.com/watch?v=goToXTC96Co&list=PL-osiE80TeTs4UjLw5MM6OjgkjFeUxCYH&index=13).
