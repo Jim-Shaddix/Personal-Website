@@ -15,7 +15,6 @@
   </header>
 
 
-
   <div class="container-fluid">
 
 
@@ -57,42 +56,169 @@
             <ul class="fa-ul">
               <li>
                 <a href="https://github.com/Jim-Shaddix" target="_blank">
-                                <span class="fa-li">
-                                    <i class="fab fa-github"></i>
-                                </span>
+                              <span class="fa-li">
+                                  <i class="fab fa-github"></i>
+                              </span>
                   Github
                 </a>
               </li>
               <li>
                 <a href="http://www.linkedin.com/in/james-shaddix-215501183" target="_blank">
-                                <span class="fa-li">
-                                    <i class="fab fa-linkedin"></i>
-                                </span>
+                              <span class="fa-li">
+                                  <i class="fab fa-linkedin"></i>
+                              </span>
                   Linkedin
                 </a>
               </li>
               <li>
                 <a href="https://www.facebook.com/jimmy.shaddix.7" target="_blank">
-                                <span class="fa-li">
-                                    <i class="fab fa-facebook"></i>
-                                </span>
+                              <span class="fa-li">
+                                  <i class="fab fa-facebook"></i>
+                              </span>
                   Facebook
                 </a>
               </li>
               <li>
                 <a href="contact">
-                                <span class="fa-li">
-                                    <i class="fas fa-envelope-square"></i>
-                                </span>
+                              <span class="fa-li">
+                                  <i class="fas fa-envelope-square"></i>
+                              </span>
                   Email
                 </a>
               </li>
             </ul>
           </div>
         </div>
-
       </div>
     </section>
+
+
+    <div class="row justify-content-start-md  justify-content-xs-center">
+      <div class="col-3 offset-md-1">
+        <!-- Button trigger modal -->
+        <button type="button" class="btn middle-icon" data-toggle="modal" data-target="#exampleModalCenter">
+          <i class="fas fa-file-code fa-3x"></i>
+          <p> Skills </p>
+        </button>
+      </div>
+      <div class="col-3">
+        <a href="projects">
+          <button type="button" class="btn middle-icon">
+            <i class="fas fa-folder-open fa-3x"></i>
+            <p> Projects </p>
+          </button>
+        </a>
+      </div>
+      <div class="col-3">
+        <a href="{{url_for('static', filename='resume/resume.pdf')}}" download>
+          <button type="button" class="btn middle-icon">
+            <i class="fas fa-file fa-3x"></i>
+            <p> Resume </p>
+          </button>
+        </a>
+      </div>
+    </div>
+
+
+    <script type="text/javascript">
+
+        function plotly_analysis() {
+
+            var trace1 = {
+                type: 'bar',
+                x: ["Numpy", "Pandas", "Matplotlib", "Plotly", "Dash", "Scipy", "scikitlearn", "Excel"],
+                y: [5, 5, 5, 4, 4, 3, 3, 3],
+                marker: {
+                    color: 'red',
+                    line: {
+                        width: 2.5
+                    }
+                }
+            };
+
+            var data = [trace1];
+
+            var layout = {
+                title: 'Data Analysis Skills',
+                font: {size: 12},
+                yaxis: {
+                    tickvals: [5, 4, 3, 2, 1],
+                    ticktext: ['Strong Skills', 'Skilled', 'Some Skill', 'Experienced', 'Beginner']
+                }
+            };
+            x = document.getElementById('plotlyDiv')
+            x.innerhtml = ""
+            Plotly.newPlot('plotlyDiv', data, layout, {responsive: true});
+        }
+
+        function plotly_languages() {
+
+            var trace1 = {
+                type: 'bar',
+                x: ["Python", "C/C++", "MATLAB", "GIT CLI", "SQL", "Java", "HTML/CSS", "C#", "Javascript"],
+                y: [5, 4, 4, 4, 3, 3, 3, 2, 1],
+                marker: {
+                    color: 'blue',
+                    line: {
+                        width: 2.5
+                    }
+                }
+            };
+
+            var data = [trace1];
+
+            var layout = {
+                title: 'Software Skills',
+                font: {size: 12},
+                yaxis: {
+                    tickvals: [5, 4, 3, 2, 1],
+                    ticktext: ['Strong Skills', 'Skilled', 'Some Skill', 'Experienced', 'Beginner']
+                }
+            };
+
+            Plotly.newPlot('plotlyDiv', data, layout, {responsive: true});
+        }
+
+    </script>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+         aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle">Skills</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col">
+                <button type="button" class="btn btn-primary" onclick="plotly_languages()">
+                  Software
+                </button>
+                <button type="button" class="text-right btn btn-danger" onclick="plotly_analysis()">
+                  Data Analysis
+                </button>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col">
+                <div id="plotlyDiv"><!-- Plotly chart will be drawn inside this DIV --></div>
+                <script> plotly_languages() </script>
+              </div>
+            </div>
+
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
 
     <!-- Credentials -->
     <section>
@@ -104,7 +230,7 @@
 
           <!-- Physics B.S. -->
           <div class="media">
-            <!-- <img src="..." class="mr-3" alt="..."> -->
+            <img src="{{ url_for('static', filename='images/rams-logo.jpg') }}" class="mr-3" alt="rams logo">
             <div class="media-body">
               <h5 class="mt-0"><u>B.S. Applied Physics (Colorado State University)</u></h5>
               <ul>
@@ -122,7 +248,7 @@
 
           <!-- Computer Science B.S. -->
           <div class="media">
-            <!-- <img src="..." class="mr-3" alt="..."> -->
+            <img src="{{ url_for('static', filename='images/rams-logo.jpg') }}" class="mr-3" alt="rams logo">
             <div class="media-body">
               <h5 class="mt-0"><u>B.S. Computer Science (Colorado State University)</u></h5>
               <ul>
@@ -180,11 +306,12 @@
     </section>
 
     <!-- Skills Title -->
+    <!--
     <section>
       <div class="row">
         <div class="off-section col-9 offset-md-1">
           <h3 class="title">
-            <b> Skills </b>
+            <b> Skills (Full List) </b>
           </h3>
           <div class="row">
 
@@ -238,7 +365,8 @@
       </div>
     </section>
 
-  </div> <!-- End Container-->
+
+  </div> -->
 
 
 
