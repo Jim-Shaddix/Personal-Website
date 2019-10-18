@@ -12,6 +12,15 @@ i{
     margin-top: 5px;
 }
 
+/*
 .stick{
     position: fixed;
 }
+
+@media only screen and (min-width: 768px) {
+  .stick {
+      position: fixed;
+  }
+}
+
+ */

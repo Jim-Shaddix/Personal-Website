@@ -14,16 +14,18 @@
 
   </header>
 
+  <!-- Load Javascript Functions -->
+  <script src="{{ url_for("static", filename="javascript/plotly_software.js") }}"></script>
 
-  <div class="container-fluid">
+  <div class="container">
 
 
     <!-- About Me / Contact-->
     <section class="first-section">
-      <div class="row">
+      <div class="row justify-content-center">
 
         <!-- About Me -->
-        <div class="col-9 offset-md-1">
+        <div class="col-12 col-md-6">
           <h3 class="title">
             <b> About Me </b>
           </h3>
@@ -47,12 +49,11 @@
         </div>
 
         <!-- Contact -->
-        <div class="sticky-top col-2">
-          <div class="stick">
+        <div class="col-12 col-md-2">
+          <div>
             <h3 class="title">
               <b> Contact </b>
             </h3>
-
             <ul class="fa-ul">
               <li>
                 <a href="https://github.com/Jim-Shaddix" target="_blank">
@@ -89,101 +90,43 @@
             </ul>
           </div>
         </div>
+
       </div>
     </section>
 
 
-    <div class="row justify-content-start-md  justify-content-xs-center">
-      <div class="col-3 offset-md-1">
-        <!-- Button trigger modal -->
-        <button type="button" class="btn middle-icon" data-toggle="modal" data-target="#exampleModalCenter">
+    <div class="row justify-content-start">
+      <div class="col-sm-6 col-md-3 text-center">
+        <button type="button" class="btn middle-icon" data-toggle="modal" data-target="#skillModal">
           <i class="fas fa-file-code fa-3x"></i>
-          <p> Skills </p>
+          <p>Skills</p>
         </button>
       </div>
-      <div class="col-3">
-        <a href="projects">
-          <button type="button" class="btn middle-icon">
-            <i class="fas fa-folder-open fa-3x"></i>
-            <p> Projects </p>
-          </button>
-        </a>
+      <div class="col-sm-6 col-md-3 text-center">
+        <button type="button" class="btn middle-icon" data-toggle="modal" data-target="#credModal">
+          <i class="fas fa-award fa-3x"></i>
+          <p>Credentials</p>
+        </button>
       </div>
-      <div class="col-3">
-        <a href="{{url_for('static', filename='resume/resume.pdf')}}" download>
+      <div class="col-sm-6 col-md-3 text-center">
+        <button type="button" class="btn middle-icon" data-toggle="modal" data-target="#workModal">
+          <i class="fas fa-briefcase fa-3x"></i>
+          <p>Work History</p>
+        </button>
+      </div>
+      <div class="col-sm-6 col-md-3 text-center">
+        <a href="{{ url_for('static', filename='resume/resume.pdf') }}" download>
           <button type="button" class="btn middle-icon">
             <i class="fas fa-file fa-3x"></i>
-            <p> Resume Download</p>
+            <p>Download Resume</p>
           </button>
         </a>
       </div>
     </div>
 
-
-    <script type="text/javascript">
-
-        function plotly_analysis() {
-
-            var trace1 = {
-                type: 'bar',
-                x: ["Numpy", "Pandas", "Matplotlib", "Plotly", "Dash", "Scipy", "scikitlearn", "Excel"],
-                y: [5, 5, 5, 4, 4, 3, 3, 3],
-                marker: {
-                    color: 'red',
-                    line: {
-                        width: 2.5
-                    }
-                }
-            };
-
-            var data = [trace1];
-
-            var layout = {
-                title: 'Data Analysis Skills',
-                font: {size: 12},
-                yaxis: {
-                    tickvals: [5, 4, 3, 2, 1],
-                    ticktext: ['Strong Skills', 'Skilled', 'Some Skill', 'Experienced', 'Beginner']
-                }
-            };
-            x = document.getElementById('plotlyDiv')
-            x.innerhtml = ""
-            Plotly.newPlot('plotlyDiv', data, layout, {responsive: true});
-        }
-
-        function plotly_languages() {
-
-            var trace1 = {
-                type: 'bar',
-                x: ["Python", "C/C++", "MATLAB", "GIT CLI", "SQL", "Java", "HTML/CSS", "C#", "Javascript"],
-                y: [5, 4, 4, 4, 3, 3, 3, 2, 1],
-                marker: {
-                    color: 'blue',
-                    line: {
-                        width: 2.5
-                    }
-                }
-            };
-
-            var data = [trace1];
-
-            var layout = {
-                title: 'Software Skills',
-                font: {size: 12},
-                yaxis: {
-                    tickvals: [5, 4, 3, 2, 1],
-                    ticktext: ['Strong Skills', 'Skilled', 'Some Skill', 'Experienced', 'Beginner']
-                }
-            };
-
-            Plotly.newPlot('plotlyDiv', data, layout, {responsive: true});
-        }
-
-    </script>
-
-    <!-- Modal -->
-    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
-         aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <!-- Skill Modal -->
+    <div class="modal fade" id="skillModal" tabindex="-1" role="dialog"
+         aria-labelledby="skillModalTitle" aria-hidden="true">
       <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
           <div class="modal-header">
@@ -192,10 +135,11 @@
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
+
           <div class="modal-body">
             <div class="row">
               <div class="col">
-                <button type="button" class="btn btn-primary" onclick="plotly_languages()">
+                <button type="button" class="btn btn-primary" onclick="plotly_software()">
                   Software
                 </button>
                 <button type="button" class="text-right btn btn-danger" onclick="plotly_analysis()">
@@ -207,7 +151,7 @@
             <div class="row">
               <div class="col">
                 <div id="plotlyDiv"><!-- Plotly chart will be drawn inside this DIV --></div>
-                <script> plotly_languages() </script>
+                <script> plotly_software() </script>
               </div>
             </div>
 
@@ -219,99 +163,123 @@
       </div>
     </div>
 
+    <!-- Credentials Modal -->
+    <div class="modal fade" id="credModal" tabindex="-1" role="dialog"
+         aria-labelledby="credModalTitle" aria-hidden="true">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="credModalLongTitle">Credentials</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
 
-    <!-- Credentials -->
-    <section>
-      <div class="row">
-        <div class="off-section col-9 offset-md-1">
-          <h3 class="title">
-            <b> Credentials </b>
-          </h3>
+            <!-- BODY -->
+            <section>
+              <!-- Physics B.S. -->
+              <div class="media">
+                <img src="{{ url_for('static', filename='images/rams-logo.jpg') }}" class="mr-3" alt="rams logo">
+                <div class="media-body">
+                  <h5 class="mt-0"><u>B.S. Applied Physics (Colorado State University)</u></h5>
+                  <ul>
+                    <li>
+                      <b> Physics Course List: </b> Quantum Mechanics, Electromagnetism, Thermodynamics, Mechanics,
+                      Modern
+                      Physics, Circuits.
+                    </li>
+                    <li>
+                      <b> Mathematics Course List: </b> Vector Calculus, Differential Equations, Linear Algebra for Data
+                      Scientists, Analytical Techniques for Physicists.
+                    </li>
+                  </ul>
+                </div>
+              </div>
 
-          <!-- Physics B.S. -->
-          <div class="media">
-            <img src="{{ url_for('static', filename='images/rams-logo.jpg') }}" class="mr-3" alt="rams logo">
-            <div class="media-body">
-              <h5 class="mt-0"><u>B.S. Applied Physics (Colorado State University)</u></h5>
-              <ul>
-                <li>
-                  <b> Physics Course List: </b> Quantum Mechanics, Electromagnetism, Thermodynamics, Mechanics, Modern
-                  Physics, Circuits.
-                </li>
-                <li>
-                  <b> Mathematics Course List: </b> Vector Calculus, Differential Equations, Linear Algebra for Data
-                  Scientists, Analytical Techniques for Physicists.
-                </li>
-              </ul>
+              <!-- Computer Science B.S. -->
+              <div class="media">
+                <img src="{{ url_for('static', filename='images/rams-logo.jpg') }}" class="mr-3" alt="rams logo">
+                <div class="media-body">
+                  <h5 class="mt-0"><u>B.S. Computer Science (Colorado State University)</u></h5>
+                  <ul>
+                    <li>
+                      <b> Computer Science Course List: </b> Machine Learning, Artificial Intelligence, Software
+                      Development,
+                      Parallel Programming, Algorithms, Databases.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </section>
+
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
             </div>
           </div>
+        </div>
+      </div>
+    </div>
 
-          <!-- Computer Science B.S. -->
-          <div class="media">
-            <img src="{{ url_for('static', filename='images/rams-logo.jpg') }}" class="mr-3" alt="rams logo">
-            <div class="media-body">
-              <h5 class="mt-0"><u>B.S. Computer Science (Colorado State University)</u></h5>
+    <!-- Work Modal -->
+    <div class="modal fade" id="workModal" tabindex="-1" role="dialog"
+         aria-labelledby="workModalTitle" aria-hidden="true">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="workModalLongTitle">Work History</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+
+
+            <!-- Work History -->
+            <section>
+              <h5><u>Physics Research Assistant (Data Analyst / Software Engineer)</u></h5>
+              <em>Colorado State University Dept. Physics (June 2018 – Present)</em>
               <ul>
                 <li>
-                  <b> Computer Science Course List: </b> Machine Learning, Artificial Intelligence, Software
-                  Development,
-                  Parallel Programming, Algorithms, Databases.
+                  <em>MATLAB</em>: Developed a GUI that interactively uses signal processing techniques for finding,
+                  fitting,
+                  and
+                  tracking peak fits on experimental data.
+                </li>
+                <li>
+                  <em>Python</em>: Developed a web application with an interactive graph component for exploring
+                  intensity
+                  data
+                  from a neutron scattering experiment.
+                </li>
+                <li>
+                  <em>Python</em>: Gave a presentation on how to effectively use Python for data analysis to a group of
+                  graduate physics students.
                 </li>
               </ul>
+
+              <h5><u>Software Engineer</u></h5>
+              <em>Colorado State University Energy Institute (May 2016 – August 2016)</em>
+              <ul>
+                <li>
+                  <em>C#</em>: Developed code for a raspberry pi that drove circuits for a visual model of the electric
+                  load
+                  of a village in Africa. I Collaborated with Electrical Engineers and drove circuits using the I^2C
+                  data
+                  communication protocol.
+                </li>
+              </ul>
+            </section>
+
+
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
             </div>
           </div>
-
         </div>
       </div>
-    </section>
+    </div>
 
-    <!-- Work History -->
-    <section>
-      <div class="row">
-        <div class="col-9 offset-md-1">
-          <h3 class="title">
-            <b> Work History </b>
-          </h3>
-          <h5><u>Physics Research Assistant (Data Analyst / Software Engineer)</u></h5>
-          <em>Colorado State University Dept. Physics (June 2018 – Present)</em>
-          <ul>
-            <li>
-              <em>MATLAB</em>: Developed a GUI that interactively uses signal processing techniques for finding,
-              fitting,
-              and
-              tracking peak fits on experimental data.
-            </li>
-            <li>
-              <em>Python</em>: Developed a web application with an interactive graph component for exploring intensity
-              data
-              from a neutron scattering experiment.
-            </li>
-            <li>
-              <em>Python</em>: Gave a presentation on how to effectively use Python for data analysis to a group of
-              graduate physics students.
-            </li>
-          </ul>
-
-          <h5><u>Software Engineer (Intern)</u></h5>
-          <em>Colorado State University Energy Institute (May 2016 – August 2016)</em>
-          <ul>
-            <li>
-              <em>C#</em>: Developed code for a raspberry pi that drove circuits for a visual model of the electric load
-              of a village in Africa. I Collaborated with Electrical Engineers and drove circuits using the I^2C data
-              communication protocol.
-            </li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <p></p>
-    <p></p>
-  <p></p>
-  <p></p>
-  <p></p>
-  <p></p>
-  <p></p>
     <!-- Skills Title -->
     <!--
     <section>
@@ -372,8 +340,8 @@
       </div>
     </section>
 
-
-  </div> -->
+   -->
+  </div>
 
 
 
