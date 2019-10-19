@@ -17,6 +17,7 @@ function plotly_software() {
     var layout = {
         title: 'Software Skills',
         font: {size: 12},
+        paper_bgcolor: '#f5f8fa',
         yaxis: {
             tickvals: [5, 4, 3, 2, 1],
             ticktext: ['Strong Skills', 'Skilled', 'Some Skill', 'Experienced', 'Beginner']
@@ -45,6 +46,7 @@ function plotly_analysis() {
     var layout = {
         title: 'Data Analysis Skills',
         font: {size: 12},
+        paper_bgcolor: '#f5f8fa',
         yaxis: {
             tickvals: [5, 4, 3, 2, 1],
             ticktext: ['Strong Skills', 'Skilled', 'Some Skill', 'Experienced', 'Beginner']
