@@ -27,6 +27,7 @@
 }
 .myname:hover{
     background-color: #dff3ff;
+    color: #007bff !important;
 }
 
 /* Makes my name look like a normal link */
@@ -42,18 +43,10 @@
 }
 .nav-link:hover{
     background-color: #dff3ff;
+    color: #007bff !important;
 }
 
-/* display sidebars on navlinks */
-/*
-@media only screen and (min-width: 575px) {
-  .nav-link:hover {
-      border-left: 1px solid black;
-      border-right: 1px solid black;
-  }
-}
-*/
-
+/* Adds top margin when the nav bar collapses */
 @media only screen and (max-width: 575px) {
   .nav-link {
     border-top-color: rgba(0,0,0,.125);
@@ -62,10 +55,12 @@
   }
 }
 
-
 .nav-text{
-    color: #007bff !important;
+    /*color: #007bff !important;*/
+    color: black !important;
     font-weight: 400 !important;
-    font-size: 16px !important;
+    font-size: 0.75rem !important;
     margin-left: 15px;
+    font-family: Montserrat,helvetica neue,Helvetica,Arial,sans-serif !important;
+    font-weight: 900 !important;
 }

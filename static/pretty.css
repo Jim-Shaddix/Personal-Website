@@ -21,14 +21,15 @@ header {
 }
 
 header h1{
-    font-family: merriweather, serif;
+    font-family:"Open Sans", sans-serif;
     color: #2e2e2e;
     letter-spacing: .01rem;
     text-align: center;
 }
 
 header h3{
-    color: rgba(129,111,130,0.98);
+    font-family:"Open Sans", sans-serif;
+    color: rgba(0,0,0,0.5);
     text-align: center;
 }
 
