@@ -54,3 +54,12 @@ function plotly_analysis() {
     x.innerhtml = ""
     Plotly.newPlot('plotlyDiv', data, layout, {responsive: true});
 }
+
+
+/* This was supposed to stop plotly from loading after the modal,
+ * but it doesn't seem to work
+ */
+$('#skillModal').on('shown.bs.modal',  function (e) {
+  plotly_software();
+})
+

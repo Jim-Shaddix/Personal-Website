@@ -16,3 +16,6 @@ textarea{
 #message{
     height: 175px;
 }
+.form-control{
+    background-color: #f5f8fa;
+}
