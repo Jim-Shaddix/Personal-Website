@@ -2,10 +2,15 @@ i{
     font-size: 25px;
 }
 
+.fa-ul a{
+    color: black;
+}
+
 .fa-ul a:hover{
     /*color: red;*/
     background-color: transparent;
     text-decoration: underline;
+    color: #0000FF;
 }
 
 .fa-ul li{
