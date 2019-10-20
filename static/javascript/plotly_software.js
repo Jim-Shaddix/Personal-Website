@@ -20,7 +20,7 @@ function plotly_software() {
         paper_bgcolor: '#f5f8fa',
         yaxis: {
             tickvals: [5, 4, 3, 2, 1],
-            ticktext: ['Strong Skills', 'Skilled', 'Some Skill', 'Experienced', 'Beginner']
+            ticktext: ['Strong Skills', 'Skilled', 'Intermediate', 'Experienced', 'Beginner']
         }
     };
 
@@ -31,8 +31,8 @@ function plotly_analysis() {
 
     var trace1 = {
         type: 'bar',
-        x: ["Numpy", "Pandas", "Matplotlib", "Plotly", "Dash", "Scipy", "scikitlearn", "Excel"],
-        y: [5, 5, 5, 4, 4, 3, 3, 3],
+        x: ["Numpy", "Matplotlib", "Pandas", "Plotly", "Dash", "Scipy", "scikitlearn", "Excel", "TensorFlow"],
+        y: [5, 5, 5, 4, 4, 3, 3, 3, 1],
         marker: {
             color: 'red',
             line: {
@@ -49,7 +49,7 @@ function plotly_analysis() {
         paper_bgcolor: '#f5f8fa',
         yaxis: {
             tickvals: [5, 4, 3, 2, 1],
-            ticktext: ['Strong Skills', 'Skilled', 'Some Skill', 'Experienced', 'Beginner']
+            ticktext: ['Strong Skills', 'Skilled', 'Intermediate', 'Experienced', 'Beginner']
         }
     };
     x = document.getElementById('plotlyDiv')
