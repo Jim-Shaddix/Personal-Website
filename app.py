@@ -51,15 +51,15 @@ def home_page():
     return render_template("home.html", title="home")
 
 
-@app.route("/projects")
-def projects():
+@app.route("/portfolio")
+def portfolio():
 
     # json file to parse
     json_file = "static/json/projects.json"
 
     project_list = read_json(json_file)
 
-    # grouping projects into two's
+    # grouping portfolio into two's
     project_groups = [[project_list[i*2], project_list[i*2+1]]
                       for i in range(len(project_list) // 2)]
 
@@ -68,8 +68,8 @@ def projects():
     if len(project_list) % 2 != 0:
         project_singles = project_list[-1:]
 
-    return render_template("projects.html",
-                           title="projects",
+    return render_template("portfolio.html",
+                           title="portfolio",
                            project_groups=project_groups,
                            project_singles=project_singles)
 

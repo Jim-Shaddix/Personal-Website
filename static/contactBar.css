@@ -8,7 +8,8 @@ i{
 
 .fa-ul a:hover{
     /*color: red;*/
-    background-color: transparent;
+    /*background-color: transparent;*/
+    /*background-color: lightblue;*/
     text-decoration: underline;
     color: #0000FF;
 }

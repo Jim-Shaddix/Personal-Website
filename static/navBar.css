@@ -52,7 +52,6 @@
     border-top-color: rgba(0,0,0,.125);
     border-top-style: solid;
     border-top-width: 2px;
-    padding-left: 15px;
   }
 }
 
@@ -61,7 +60,12 @@
     color: black !important;
     font-weight: 400 !important;
     font-size: 0.75rem !important;
-    margin-left: 15px;
+    /*margin-left: 15px;*/
     font-family: Montserrat,helvetica neue,Helvetica,Arial,sans-serif !important;
     font-weight: 900 !important;
+
+    padding-top: 20px !important;
+    padding-bottom: 20px !important;
+    padding-right: 25px !important;
+    padding-left: 25px !important;
 }
