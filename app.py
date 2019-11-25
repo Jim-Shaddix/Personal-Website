@@ -7,7 +7,7 @@ from pathlib import Path
 from forms import ContactForm
 from development_config import Config
 """
-This is the application file that launches the application.
+This file launches the application.
 """
 
 # init application

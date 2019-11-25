@@ -16,6 +16,8 @@
     "title": "Neutron Scattering Dashboard",
     "github": "https://github.com/Jim-Shaddix/Neutron-Scattering-Dashboard",
     "image": "images/project-images/Neutron-Scattering.png",
+    "notebook": "notebooks/neutron-scattering.html",
+    "live": "http://3.234.168.156/",
     "description": ["This is a web dashboard I developed that allows users to interactively ",
                     "view results from a Neutron Scattering Experiment. Functionally, the application",
                     "allows for users to specifiy a sweeping direction, and",

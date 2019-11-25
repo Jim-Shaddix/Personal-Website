@@ -15,7 +15,7 @@
   <p class="heroku-note">
     <span class="badge badge-info">NOTE:</span>
     <small>
-       This project is hosted on Heroku's Free Tier. This tier uses serverless hosting
+      This project is hosted on Heroku's Free Tier. This tier uses serverless hosting
       which may result in the app taking 10-20 seconds to load.
     </small>
   </p>
@@ -23,9 +23,16 @@
 <div class="row">
   <div class="col">
     <a href={{ project.github }} target="_blanck">
-      <div class="btn btn-outline-info"> Github</div>
+      <div class="btn btn-outline-primary"> Github</div>
     </a>
   </div>
+  {% if project.notebook %}
+  <div class="col text-center">
+      <a href="{{ url_for('static', filename=project.notebook) }}" target="_blanck">
+        <div class="btn btn-outline-info"> Notebook </div>
+      </a>
+  </div>
+  {% endif %}
   {% if project.live %}
     <div class="col text-right">
       <a href={{ project.live }} target="_blanck">
